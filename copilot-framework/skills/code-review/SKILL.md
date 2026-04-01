@@ -1,6 +1,6 @@
 ---
 name: code-review-excellence
-description: Multi-language code reviewer. React 19, Vue 3, Rust, TypeScript, Python, Go.
+description: Code reviewer for the project stack — React, Next.js, TypeScript, Supabase.
 allowed-tools:
   - Read, Glob, Grep, Bash, WebFetch
 ---
@@ -11,25 +11,20 @@ allowed-tools:
 1. Context gathering (read PR, check CI)
 2. High-level: architecture + design fit
 3. Line-by-line: logic, security, perf
-4. Summary + decision (approve/request)
+4. Summary + decision (approve/request changes)
 
 ## Severity labels
-[blocking]  -- must fix before merge
-[important] -- should fix, discuss
-[nit]       -- nice to have
-[suggestion] -- alternative approach
-[learning]  -- educational, no action
-[praise]    -- good work, keep it up
+- `[blocking]` — must fix before merge
+- `[important]` — should fix, discuss if not
+- `[nit]` — nice to have
+- `[suggestion]` — alternative approach worth considering
+- `[learning]` — educational, no action required
+- `[praise]` — good work, reinforce it
 
-## Language guides (loaded on demand)
-- React 19: hooks, RSC, Server Actions
-- TypeScript: strict, generics, utility
-- Rust: ownership, lifetime, unsafe
-- Python: type hints, async patterns
-- Vue 3.5: Composition API, Pinia
-- Go: goroutines, error handling
-- C/C++: memory safety, RAII, UB
-- Java 21: virtual threads, Spring Boot
+## Stack-specific guides (load on demand)
+- **React / Next.js 14**: hooks, RSC, Server Actions, App Router patterns
+- **TypeScript**: strict mode, generics, utility types, narrowing
+- **Supabase**: RLS policies, auth patterns, migration hygiene
 
 ## Golden rule
 Ask questions, don't command.
